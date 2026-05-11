@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #ffecd1, #ffe4b5, #f4f4f4);
+  color: #333;
+  line-height: 1.6;
+  animation: backgroundShift 10s ease-in-out infinite alternate;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: 'Georgia', serif;
+  color: #d2691e;
+}
+
+button {
+  transition: all 0.3s ease;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e5533d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+@keyframes backgroundShift {
+  0% { background: linear-gradient(135deg, #ffecd1, #ffe4b5, #f4f4f4); }
+  100% { background: linear-gradient(135deg, #ffe4b5, #ffecd1, #e0e0e0); }
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
